@@ -7,5 +7,3 @@ COPY yarn.lock /api/yarn.lock
 RUN yarn install
 
 COPY . /api
-
-CMD ["yarn". "run", "start:dev"]

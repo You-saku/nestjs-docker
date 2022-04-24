@@ -2,8 +2,7 @@ FROM node:16.13.1-alpine
 RUN yarn global add pkg
 
 WORKDIR /api
-COPY package.json /api/package.json
-COPY yarn.lock /api/yarn.lock
+COPY package.json yarn.lock /api/
 RUN yarn install
 
-COPY . /api
+COPY . .

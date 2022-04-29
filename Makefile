@@ -10,3 +10,5 @@ sh:
 	docker-compose exec nest sh
 dev:
 	docker-compose exec nest yarn run start:dev
+mysql:
+	docker-compose exec mysql mysql --user=user --password=secret

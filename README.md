@@ -18,3 +18,4 @@ prismaでやる
  - @nestjs/config
  - class-validator class-transformer
  - prisma
+ - prisma/client

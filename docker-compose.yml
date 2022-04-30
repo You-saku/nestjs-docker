@@ -25,3 +25,4 @@ services:
       MYSQL_PASSWORD: secret
     volumes:
       - /var/lib/mysql
+      - ./docker/init_scripts:/docker-entrypoint-initdb.d

@@ -10,9 +10,10 @@ open localhost:3000 (結構時間おいてから実行してくれな)
 ```
 
 ## migration方法
-
+prismaでやります
 
 ## 入ってるパッケージ
  - @nestjs/typeorm typeorm mysql
  - @nestjs/config
  - class-validator class-transformer
+ - prisma

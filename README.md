@@ -1,5 +1,10 @@
 # NestJS-docker
 
+## リポジトリの目的
+1. NestJSの環境をdockerで作りたかった
+1. dockerをすこしだけ触りたい
+1. Nest+Prismaを使った基本的なCRUDまでは学習したかった
+
 ## 始め方
 ```
 git clone このリポジトリ

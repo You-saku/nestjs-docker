@@ -26,6 +26,8 @@ DATABASE_URL="mysql://user:secret@mysql:3306/develop"
 
 ※prismaについて [prisma + nestjs](https://docs.nestjs.com/recipes/prisma)
 
+## 簡単なCRUD処理
+
 ## 入ってるパッケージ
 ### yarn
  - @nestjs/typeorm typeorm mysql

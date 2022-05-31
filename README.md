@@ -15,7 +15,16 @@ open localhost:3000 (結構時間おいてから実行してくれな)
 ```
 
 ## migration方法
-prismaでやる
+
+環境変数(.env)を設定してから使う
+```
+DATABASE_URL="mysql://user:secret@mysql:3306/develop"
+```
+
+基本的には「docker-compose exec nest yarn prisma 〇〇」 でなんとかなる
+
+
+※prismaについて [prisma + nestjs](https://docs.nestjs.com/recipes/prisma)
 
 ## 入ってるパッケージ
 ### yarn

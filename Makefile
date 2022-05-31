@@ -1,5 +1,8 @@
 init:
-	docker-compose up -d --build && docker-compose exec nest yarn install
+	docker-compose up -d --build
+	docker-compose exec nest yarn install
+	sleep 10
+	docker-compose exec -T mysql mysql -psecret < docker/db/initial.sql
 ps:
 	docker-compose ps
 up:
@@ -12,7 +15,7 @@ sh:
 	docker-compose exec nest sh
 dev:
 	docker-compose exec nest yarn run start:dev
-mysqlR:
+sqlroot:
 	docker-compose exec mysql mysql -r -p
-mysqlU:
+sqluser:
 	docker-compose exec mysql mysql --user=user --password=secret

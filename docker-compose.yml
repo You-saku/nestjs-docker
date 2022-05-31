@@ -24,5 +24,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: secret
     volumes:
-      - /var/lib/mysql
-      - ./docker/init_scripts:/docker-entrypoint-initdb.d
+      # 永続化するときにマウントするdir
+      - nestdb:/var/lib/mysql
+volumes:
+  nestdb:

@@ -27,6 +27,15 @@ DATABASE_URL="mysql://user:secret@mysql:3306/develop"
 ※prismaについて [prisma + nestjs](https://docs.nestjs.com/recipes/prisma)
 
 ## 簡単なCRUD処理
+```
+1.migrationをしておく
+2.docker-compose exec nest nest g resource
+3.migrationで作ったmodelの名前を解答
+4.APIの種類を選択
+5.Yesで解答
+```
+
+そうすると「controller」とか「service」ができてModuleのimportとかされる
 
 ## 入ってるパッケージ
 ### yarn

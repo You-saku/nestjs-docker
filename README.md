@@ -25,6 +25,7 @@ DATABASE_URL="mysql://user:secret@mysql:3306/develop"
 
 
 ※prismaについて [prisma + nestjs](https://docs.nestjs.com/recipes/prisma)
+※[prismaをnestで動かすときに](https://www.prisma.io/nestjs)
 
 ## 簡単なCRUD処理
 ```

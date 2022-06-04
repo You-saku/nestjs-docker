@@ -38,6 +38,12 @@ DATABASE_URL="mysql://user:secret@mysql:3306/develop"
 
 そうすると「controller」とか「service」ができてModuleのimportとかされる
 
+## バリデーション追加
+```
+[参考] https://zenn.dev/waddy/scraps/e9b9e825d2f6b7
+yarn add class-validator class-transformer をしろ
+```
+
 ## 入ってるパッケージ
 ### yarn
  - @nestjs/typeorm typeorm mysql

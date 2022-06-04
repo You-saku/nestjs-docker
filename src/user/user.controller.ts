@@ -9,9 +9,9 @@ import { user, Prisma } from '@prisma/client';
 export class UserController {
   constructor(private readonly userService: UserService) {} // prismaで書き換え
 
-  @Post()// prismaで書き換え
-  async create(@Body() data: Prisma.userCreateInput): Promise<user> {
-    return this.userService.create(data);
+  @Post()// prismaで書き換え, 簡易バリデーション実装
+  async create(@Body() user: CreateUserDto): Promise<user> {
+    return this.userService.create(user);
   }
 
   @Get()
